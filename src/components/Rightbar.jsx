@@ -1,4 +1,8 @@
-// import { Link } from "react-router-dom"
+import Plus from '../assets/plus-icon.svg'
+import Widget from '../assets/widget-icon.svg'
+import Item from '../assets/item-icon.svg'
+import Cardbg from '../assets/card-bg.svg'
+import Photo from '../assets/photo.svg'
 
 function Rightbar() {
 
@@ -7,10 +11,15 @@ function Rightbar() {
             <>
                 <div className="card shadow-lg border border-gray-500 rounded-md">
                     <div className="inner-card flex justify-center flex-col">
-                        <div className="container flex flex-col justify-center items-center gap-2 p-7">
-                            <div></div>
-                            <h1 className="text-black text-l font-bold">Welcome back Tech Sis</h1>
-                            <a href="\" className="text-blue-400">add a photo</a>
+                        <div className="container flex flex-col justify-center items-center gap-2  ">
+                            <div  className='flex flex-col items-center justify-center '>
+                                <img src={Cardbg} alt="" className='' />
+                                <img src={Photo} alt="" className='absolute bg-white p-2 rounded-full translate-y-10 ' />
+                            </div>
+                            <div className='flex flex-col mt-8 p-4 items-center justify-center'>
+                                <h1 className="text-black text-l font-bold ">Welcome back Tech Sis</h1>
+                                <a href="\" className="text-blue-400">add a photo</a>
+                            </div>
                         </div>
                         <hr />
                         <div className="container flex p-3 justify-between items-center">
@@ -19,12 +28,12 @@ function Rightbar() {
                                 <h3 className="capitalize font-bold">grow your network</h3>
                             </span>
                             <span>
-                                hi
+                                <img src={Widget}alt="" />
                             </span>
                         </div>
                         <hr />
-                        <div className="container  flex p-3 justify-start items-center">
-                            <span></span>
+                        <div className="container  flex p-3  gap-2  justify-start items-center">
+                            <img src={Item} alt="" />
                             <span className="capitalize font-bold"> my items</span>
                         </div>
                     </div>
@@ -45,7 +54,7 @@ function Rightbar() {
                                 <h4>follows hashtags</h4>
                             </div>
                             <div>
-                                hi
+                                <img src={Plus} alt="" />
                             </div>
                         </div>
                         <hr />
@@ -60,8 +69,8 @@ function Rightbar() {
 
     return (
         <>
-            <div className="rightbar sm:w-1/4 ">
-                <div className=" p-4  flex flex-col gap-4">
+            <div className="rightbar sm:w-2/6 ">
+                <div className="p-4 flex flex-col gap-4">
                     <RightbarTop />
                     <RightbarBottom />
                 </div>

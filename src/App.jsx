@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
+import Login from "./components/Login";
 // import Login from "./components/Login";
 
 function App() {
@@ -9,10 +10,11 @@ function App() {
         <Router>
           <Routes>
             {/* Home route (currently commented out) */}
-            {/* <Route path="/" element={<Home />} /> */}
+              <Route path="/" element={<Login />} />
+
+             <Route path="/" element={<Home />} /> 
 
             {/* Login route */}
-            <Route path="/" element={<Home />} />
           </Routes>
         </Router>
       </div>

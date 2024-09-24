@@ -3,7 +3,7 @@ import Article from "./Article";
 function All(){
     return (
         <>
-            <div className="sm:w-2/4  p-4 flex flex-col gap-2 ">
+            <div className="sm:w-4/6  p-4 flex flex-col gap-2 ">
                 <div className="container items-center justify-center shadow-md border border-gray-300 rounded-lg p-5">
                     <div className="flex items-center justify-center">
                         <span>share</span>

@@ -6,7 +6,7 @@ function FeedItem({ icon, label }) {
             <div className="icone border rounded-full p-2 border-gray-400">{icon}</div>
             <div>
                 <h2 className='font-bold'>{label}</h2>
-                <button className="follow-btn  text-gray-600 border-2 border-gray-600 rounded px-2 py-1 rounded-xl">Follow</button>
+                <button className="follow-btn  text-gray-600 border-2 border-gray-600  px-2 py-1 rounded-xl">Follow</button>
             </div>
         </div>
     );
@@ -26,7 +26,7 @@ function Leftbar() {
 
     return (
         <>
-            <div className='sm:w-1/4 w-full'>
+            <div className='sm:w-2/6 w-full mb-24 sm:mb-0'>
                 <div className="  p-4 flex w-full">
                     <div className="card shadow-lg border border-gray-500 rounded-md w-full p-4">
                         <h1 className="font-bold text text-gray-400">Add To Your Feed</h1>
