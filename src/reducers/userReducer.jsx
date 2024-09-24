@@ -9,8 +9,12 @@
 
 // export default rootReducers
 
-// userReducer.jsx
 
+
+
+
+// userReducer.jsx
+import { SET_USER } from "../actions/actionType";
 // Initial state
 const initialState = {
     user: null,
@@ -21,11 +25,11 @@ const initialState = {
 // User reducer function
 const userReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'LOGIN_SUCCESS':
+        case SET_USER:
             return {
                 ...state,
-                user: action.payload,
-                loading: false,
+                user: action.user,
+                // loading: false,
             };
         case 'LOGIN_FAILURE':
             return {
