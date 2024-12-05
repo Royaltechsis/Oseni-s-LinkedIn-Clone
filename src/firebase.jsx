@@ -1,5 +1,5 @@
 // Import Firebase services using the modular syntax
-import { initializeApp } from 'firebase/app';
+/*import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
@@ -25,4 +25,4 @@ const provider = new GoogleAuthProvider();
 const storage = getStorage(firebaseApp);
 
 export { auth, provider, storage };
-export default db;
+export default db;*/
